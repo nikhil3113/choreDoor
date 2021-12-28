@@ -18,8 +18,8 @@ const randomChoreDoorGenerator= () =>{
  if(choreDoor===0)
  {
 openDoor1 = botDoorPath ;
-openDoor2 = beachDoorPath;
-openDoor3 = spaceDoorPath;
+openDoor2 = spaceDoorPath;
+openDoor3 = beachDoorPath;
  }
  else if(choreDoor==1)
  {
@@ -43,14 +43,14 @@ playDoor(door1);
 }
 
 doorImage2.onclick = () =>{
-  if(!isClicked(doorImage1) && currentlyPlaying) {
+  if(!isClicked(doorImage2) && currentlyPlaying) {
  doorImage2.src = openDoor2;
  playDoor(door2);
   }
 }
 
 doorImage3.onclick=() => {
-  if(!isClicked(doorImage1) && currentlyPlaying) {
+  if(!isClicked(doorImage3) && currentlyPlaying) {
  doorImage3.src = openDoor3;
  playDoor(door3);
   }
